@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border : none;
+}
+/* Universal CSS Start */
+.text-orange{color: #EA512E;}
+.text-black{color: #1B0238;}
+.text-silver{color: #6B6B94;}
+.bg-orange{background: #EA512E;}
+.bg-yellow{background: #f5890d;}
+.bg-light-yellow{background: #fee9ca;}
+.btn{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 35px;
+    font-size: 16p;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;    
+    background: #EA512E;
+}
+.btn:hover {
+    color: #fff;
+    background: #f5890d;
+}
+/* Universal CSS End */
