@@ -1,29 +1,160 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border : none;
+    border: none;
+    font-family: "Catamaran", sans-serif;
+    font-size: 16px;
 }
+
 /* Universal CSS Start */
-.text-orange{color: #EA512E;}
-.text-black{color: #1B0238;}
-.text-silver{color: #6B6B94;}
-.bg-orange{background: #EA512E;}
-.bg-yellow{background: #f5890d;}
-.bg-light-yellow{background: #fee9ca;}
-.btn{
+.text-orange { color: #EA512E; }
+
+.text-blue { color: #1B0238; }
+
+.text-silver { color: #6B6B94; }
+
+.bg-orange { background: #EA512E; }
+
+.bg-yellow { background: #f5890d !important; }
+
+.bg-light-yellow { background: #fee9ca; }
+
+.mt-10 { margin-top: 100px; }
+
+.mt-12 { margin-top: 120px; }
+
+.mt-13 { margin-top: 130px; }
+
+.mt-15 { margin-top: 150px; }
+
+.mt-20 { margin-top: 200px; }
+
+.btn {
     color: #fff;
     display: inline-block;
-    padding: 12px 35px;
-    font-size: 16p;
-    border-radius: 10px;
+    padding: 8px 30px;
+    font-size: 14px;
+    border-radius: 9px;
     font-weight: 500;
     transition: 0.5s ease;
-    position: relative;    
+    position: relative;
+    background: #EA512E;
+}
+.btn2 {
+    color: #fff;
+    display: inline-block;
+    padding: 8px 30px;
+    font-size: 14px;
+    border-radius: 9px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    position: relative;
+    text-decoration: none;
+    background: #f5890d;
+}
+.btn2:hover{
+    color: #fff;
     background: #EA512E;
 }
 .btn:hover {
     color: #fff;
     background: #f5890d;
 }
+p {
+    margin: 20px 0px 10px 0px;
+    line-height: 1.8;
+    color: #6b6b84;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
 /* Universal CSS End */
+
+
+/* Header Section Start */
+.navbar .navbar-nav .nav-item a:hover, .navbar .navbar-nav .nav-item a:focus, .main-navbar .navbar .navbar-nav .nav-item a.active {
+    color: #ea512e;
+}
+
+.navbar .navbar-nav .nav-item a.active {
+    color: #ea512e;
+}
+.navbar .navbar-nav .nav-item a {
+    color: #1b0238;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 20px;
+    padding-right: 0;
+    /* padding-top: 25px; */
+    /* padding-bottom: 25px; */
+    font-family: "Roboto", sans-serif;
+}
+/* Header Section End */
+
+
+/* Banner Section Start */
+.banner {
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    /* Cover - img will not cut. img will comes proper */
+    background: url(../img/main-banner-bg.jpg);
+    background-position: center center;
+}
+.banner .shape-1 {
+    top: 4%;
+    left: .7%;
+    animation: move 2s infinite alternate;
+}
+.banner .shape-2 {
+    top: 4%; 
+    left: 50%;
+    animation: move2 2s infinite alternate;
+}
+.banner .shape-3 {
+    top: 70%;
+    left: .7%;
+    z-index: 9;
+    animation: move 2s infinite alternate;
+}
+.banner .shape-4 {
+    top: 84%;
+    left: 48%;
+    z-index: 9;
+    animation: move3 1.5s  infinite alternate;
+}
+.cloud {
+    /* background: aqua; */
+    margin-left: -10px;
+    top: 91%;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    top: 54px;
+    borde
+}
+
+
+/* Banner Section End */
+
+
+
+/* Animation  for Images */
+/* @keyframes identifier {    Synatax 
+} */
+@keyframes move {
+    0% {}
+    100% { left: 2.5%; }
+}
+@keyframes move2 {
+    0% {}
+    100% { left: 53%; }
+}
+
+@keyframes move3 {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
