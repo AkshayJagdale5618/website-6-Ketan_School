@@ -20,6 +20,7 @@
 .text-silver { color: #6B6B94; }
 
 .bg-orange { background: #EA512E; }
+.bg-light-orange { background: #fdf6ed; }
 
 .bg-yellow { background: #f5890d !important; }
 
@@ -37,9 +38,14 @@
 
 .mt-20 { margin-top: 200px; }
 
-.pt-10 { padding-top: 100px; }
+.pt-7 { padding-top: 70px; }
 
-.pt-7 { padding-bottom: 70px; }
+.pb-7 { padding-bottom: 70px; }
+
+.ptb-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
 
 .btn {
     color: #fff;
@@ -172,13 +178,18 @@ p {
 .who{
     margin: 90px 0px;
 }
-.who .who-we-are-content span {
-    color: #ea512e;
-    font-size: 20px;
+.who .who-we-are-content span,
+.popular .col-12 , 
+.popular .card .class-list ul li span,
+.core-value span{
     font-weight: 600;
+    font-size: 20px;
+    color: #ea512e;
     font-family: "Sacramento", cursive;
 }
-.who-we-are-content h3 {
+.who-we-are-content h3,
+.popular .col-12 h3 ,
+.core-value h3{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -204,7 +215,7 @@ p {
     transition: all 0.5s;
     font-family: "Roboto", sans-serif;
 }
-.who-we-are-content .who-we-are-list li:hover span{
+.who-we-are-content .who-we-are-list ul li:hover span{
     background: #f5890d;
     transition: all 0.5s;
 
@@ -212,15 +223,140 @@ p {
 .who-we-are-shape {    
     top: 120%;
     right: 5%;
-    z-index: 2;    
+    z-index: 2;
     animation: moveLeftBounce 2s linear infinite;
 }
 /* Who we are Section End  */
 
 /* Popular Section Start */
+.popular .card {
+    border: none;
+    border-radius: 5px;
+}
+.popular .class-body {
+    background-color: #ffffff;
+    padding: 45px 30px 30px;
+    position: relative;
+    border-radius: 0 0 10px 10px;    
+  }
+.popular .card .class-list {    
+    padding-left: 0; 
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px dashed #f5890d;
+}
+.popular .card-body .price {
+    position: absolute;
+    color: #fff;
+    background: #EA512E;
+    display: inline-block;
+    right: 0;
+    top: 0;
+    line-height: 1;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 0 0 0 10px;
+    transition: 0.5s;
+}
+.popular .card:hover img {
+    transform: rotate(2deg) scale(1.2);
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.popular .card:hover .price {
+    background: #f5890d;
+}
+
+.popular .card:hover h5 {
+    color: #ea512e;
+}
+.popular .class-list  li {
+    display: inline;    
+    list-style: none;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+}
+.popular .class-list  li span {
+    color: #EA512E; 
+    font-weight: 600;
+}
+
+
+
+/* .class-shape  img {    
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+.class-shape .shape-1 {    
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.class-shape .shape-2 {    
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+} */
+
 /* Popular Section End */
 
-
+/* Core Value Section Start */
+.core-value .number{
+   width: 50px;
+   height: 50px; 
+   line-height: 50px;
+   text-align: center;
+   border-radius: 50%;
+   display: inline-block;
+   margin-top: 1.5%;
+   margin: 0px 10px;
+   font-size: 24px;
+   font-weight: 400;
+   color: #1B0238;
+   border: 3px solid #fff;   
+   outline-offset: 4px;
+   transition: 0.5s;
+   cursor: pointer;
+   font-family: "Catamaran", sans-serif;
+}
+.core-value .number:hover {
+    color: #fff;
+    transform: 0.5s;
+    background-color: #EA512E !important;
+    outline: 2px solid #EA512E !important;
+}
+/* .core-value .value-shape img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+} */
+.core-value .value-shape .shape-1 {    
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: -1;
+}
+.core-value .value-shape .shape-2 {
+    position: absolute;
+    left: 20px;
+    z-index: -1;
+    bottom: 30px;
+}
+.core-value .value-shape .shape-3 {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: -1;
+}
+/* Core Value Section End */
 
 
 
@@ -243,3 +379,4 @@ p {
     0% {}
     100% { right: 2.5%; }
 }
+
