@@ -38,7 +38,7 @@
 
 .mt-20 { margin-top: 200px; }
 
-.pt-7 { padding-top: 70px; }
+.pt-100 { padding-top: 100px; }
 
 .pb-7 { padding-bottom: 70px; }
 
@@ -181,7 +181,8 @@ p {
 .who .who-we-are-content span,
 .popular .col-12 , 
 .popular .card .class-list ul li span,
-.core-value span{
+.core-value span,
+.teacher span {
     font-weight: 600;
     font-size: 20px;
     color: #ea512e;
@@ -189,7 +190,8 @@ p {
 }
 .who-we-are-content h3,
 .popular .col-12 h3 ,
-.core-value h3{
+.core-value h3,
+.teacher h3{
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -229,6 +231,9 @@ p {
 /* Who we are Section End  */
 
 /* Popular Section Start */
+.popular {
+    position: relative;
+}
 .popular .card {
     border: none;
     border-radius: 5px;
@@ -286,30 +291,26 @@ p {
 }
 
 
-
-/* .class-shape  img {    
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-}
-
-.class-shape .shape-1 {    
-    left: 0;
-    bottom: 0;
+.popular .class-shape .shape-1 {
+    position: absolute;
+    /* top: 0px; */
+    left: 20px;
+    /* bottom: 1px; */
     z-index: -1;
 }
-.class-shape .shape-2 {    
-    right: 0;
-    bottom: 0;
+.popular .class-shape .shape-2 {
+    position: absolute;
+    right: 20px;
+    /* bottom: 0; */
     z-index: -1;
-} */
+}
 
 /* Popular Section End */
 
 /* Core Value Section Start */
 .core-value .number{
-   width: 50px;
-   height: 50px; 
+   width: 60px;
+   height: 60px; 
    line-height: 50px;
    text-align: center;
    border-radius: 50%;
@@ -331,11 +332,6 @@ p {
     background-color: #EA512E !important;
     outline: 2px solid #EA512E !important;
 }
-/* .core-value .value-shape img {
-    max-width: 100%;
-    height: auto;
-    display: inline-block;
-} */
 .core-value .value-shape .shape-1 {    
     position: absolute;
     top: 30px;
@@ -352,11 +348,42 @@ p {
     position: absolute;
     right: 0;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: -1;
 }
 /* Core Value Section End */
+
+/* Core Teacher Section Start */
+.teacher .social-media{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: -70px;
+    transition: all 0.5s ease-in;
+}
+.teacher .teacher-image:hover .social-media {
+    margin-bottom: 0px;
+    transition: all 0.5s ease-out;
+}
+.teacher .social-media li {
+    width: 30px;
+    height: 30px;
+    line-height: 32px;
+    background: #EA512E;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+.teacher .social-media li a{
+    color: #fff;
+}
+.teacher .social-media li:hover {
+    background: #f5890d;
+    transition: 0.3s ease;
+}
+
+
+/* Core Teacher Section End */
 
 
 
